@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #f0f0f0;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .site-header {
+    background-color: #1a1a1a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    border-bottom: 2px solid #e02b2b;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+  }
+  
+  .logo img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .site-header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .site-header nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .site-header nav a:hover {
+    color: #e02b2b;
+  }
+  
+  .about-container {
+    padding: 30px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .about-container h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+  
+  .about-container p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  @media (max-width: 600px) {
+    .site-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .site-header nav ul {
+      flex-direction: column;
+      gap: 10px;
+      padding-left: 0;
+    }
+  
+    .logo span {
+      font-size: 16px;
+    }
+  
+    .about-container h1 {
+      font-size: 22px;
+    }
+  
+    .about-container p {
+      font-size: 16px;
+    }
+  }

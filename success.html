@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Билет забронирован</title>
+  <link rel="stylesheet" href="booking.css" />
+  <style>
+    .ticket-box {
+      max-width: 700px;
+      margin: 60px auto;
+      background: #1e1e1e;
+      padding: 30px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 0 12px rgba(0,0,0,0.4);
+     
+    }
+    .ticket-box h1 {
+      color: #00cc88;
+    }
+    .ticket-info {
+      margin-top: 20px;
+      text-align: left;
+    }
+    .ticket-info p {
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="ticket-box">
+    <h1>🎉 Билет забронирован</h1>
+    <p>Детали вашего билета:</p>
+    <div class="ticket-info">
+      <p><strong>Фильм:</strong> <span id="filmName"></span></p>
+      <p><strong>Зал:</strong> <span id="hallName"></span></p>
+      <p><strong>Время:</strong> <span id="time"></span></p>
+      <p><strong>Место:</strong> <span id="seat"></span></p>
+    </div>
+    <button><a href="index.html"></a>На гланую</button>
+  </div>
+  
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    document.getElementById('filmName').textContent = params.get('film');
+    document.getElementById('hallName').textContent = params.get('hall');
+    document.getElementById('time').textContent = params.get('time');
+    document.getElementById('seat').textContent = params.get('seat');
+    document.getElementById('date').textContent = params.get('date');
+  </script>
+</body>
+</html>

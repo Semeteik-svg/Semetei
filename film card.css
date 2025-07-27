@@ -1,0 +1,41 @@
+body { margin: 0; font-family: 'Poppins', sans-serif; background-color: #000000; color: #fff; }
+
+header { display: flex; justify-content: space-between; align-items: center; padding: 20px 40px; background-color: #000; border-bottom: 1px solid #333; }
+
+header .logo { font-size: 24px; font-weight: 600; color: #e50914; }
+
+nav a { color: #fff; margin-left: 25px; text-decoration: none; font-weight: 500; position: relative; }
+
+nav a.active::after, nav a:hover::after { content: ''; position: absolute; left: 0; bottom: -6px; height: 2px; width: 100%; background-color: #e50914; }
+
+main { max-width: 1000px; margin: 60px auto; padding: 0 20px; }
+
+.film-container { display: flex; gap: 40px; flex-wrap: wrap; align-items: flex-start; }
+
+.poster { width: 300px; height: auto; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); }
+
+.film-details { flex: 1; }
+
+.film-details h1 { color: #f5c518; margin-top: 0; }
+
+.film-details p { font-size: 16px; margin-bottom: 12px; line-height: 1.6; }
+
+.btn-book { display: inline-block; padding: 12px 24px; background-color: #e50914; color: #fff; text-decoration: none; font-weight: 600; border-radius: 6px; transition: background-color 0.3s ease; }
+
+.btn-book:hover { background-color: #b20710; }
+
+footer { text-align: center; padding: 30px; font-size: 14px; background-color: #000; color: #888; margin-top: 60px; }
+
+@media (max-width: 768px) { .film-container { flex-direction: column; align-items: center; }
+
+.poster { width: 100%; max-width: 400px; }
+
+.film-details { text-align: center; }
+
+.btn-book { margin-top: 20px; } }
+
+.logo-title{display: flex; align-items: center; gap: 15px;}
+
+.logo{height: 50px;width: 50px;}
+
+header .kino{font-size: 24px; font-weight: 600; color: #e50914;}

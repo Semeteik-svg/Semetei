@@ -1,0 +1,222 @@
+<!DOCTYPE html><html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Фильмы по жанрам</title>
+  <link rel="stylesheet" href="films.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <div class="search-dropdown" id="searchResults"></div>
+
+    <div class="logo-title">
+      <img src="images/logo_transparent.png" alt="Логотип" class="logo" />
+    <h2>Кинотеатр "Семетей"</h2>
+    <nav>
+      <a href="index.html">Главная</a>
+      <a href="films.html">Фильмы</a>
+      <a href="contacts.html">Связь с нами</a>
+      <a href="сеансы.html">Сеансы</a>
+      <a href="about us.html">О нас</a>
+    </nav>
+  </header>  <div class="container">
+    <h1>Фильмы по жанрам</h1><div class="genre-buttons">
+  <button onclick="showGenre('action')">Боевик</button>
+
+  <button onclick="showGenre('animation')">Мультфильмы</button>
+  <button onclick="showGenre('drama')">Драма</button>
+  <button onclick="showGenre('comedy')">Комедия</button>
+  <button onclick="showGenre('fantasy')">Ужасы</button>
+</div>
+
+<div class="search-box">
+  <input type="text" id="searchInput" placeholder="Поиск фильма..." oninput="filterFilms()" />
+</div>
+
+<div id="action" class="genre-section active">
+  <h2 class="genre-title">Боевик</h2>
+  <div class="film-grid">
+    <div class="film-card">
+      <iframe src="https://www.youtube.com/watch?v=1Ks04MFo_Co" allowfullscreen></iframe>
+      <h3>Жаныбек</h3>
+      <p>Популярный фильм в своём жанре. Не пропустите!</p>
+    </div>
+    </div>
+  </div>
+</div>
+
+<div id="animation" class="genre-section">
+  <h2 class="genre-title">Мультфильмы</h2>
+  <div class="film-grid">
+    <div class="film-card">
+      <iframe src="hhttps://www.youtube.com/watch?v=kvDuoTAbDko&pp=0gcJCfwAo7VqN5tD" allowfullscreen></iframe>
+      <h3>Моана 2</h3>
+      <p>Продолжение.</p>
+    </div>
+    <div class="film-card">
+      <iframe src="https://m.youtube.com/watch?v=uX8MeBI0K9E&pp=0gcJCdgAo7VqN5tD" allowfullscreen></iframe><h3>Гадкий я 4</h3>
+      <p>Проказники снова в деле!</p>
+    </div>
+    <div class="film-card">
+      <iframe src="https://www.youtube.com/watch?v=GRJlcfKXnnk" allowfullscreen></iframe>
+      <h3>Соник в кино 3</h3>
+      <p>Весёлое и поучительное приключение.</p>
+    </div>
+    <div class="film-card">
+      <iframe src="https://www.youtube.com/watch?v=4B_0KRKsDQY&pp=0gcJCfwAo7VqN5tD" allowfullscreen></iframe>
+      <h3>Удача</h3>
+      <p>Итальянские каникулы двух друзей.</p>
+    </div>
+
+    </div>
+  </div>
+</div>
+
+<div id="drama" class="genre-section">
+  <h2 class="genre-title">Драма</h2>
+  <div class="film-grid">
+    <div class="film-card">
+      <iframe src="https://www.youtube.com/watch?v=QP4VZpwWjdg" allowfullscreen></iframe>
+      <h3>102</h3>
+      <p>рассказывает историю Армана, сотрудника милиции, работающего в службе 102.</p>
+    </div>
+    <div class="film-card">
+      <iframe src="hhttps://www.youtube.com/watch?v=BgOmgEAFcDc" allowfullscreen></iframe>
+      <h3>От</h3>
+      <p>азахстанский хоррор-фильм, который рассказывает историю о бытовом насилии, замаскированном под мистическую историю</p>
+    </div>
+    <div class="film-card">
+      <iframe src="https://www.youtube.com/watch?v=ORA1YsQA04s" allowfullscreen></iframe>
+      <h3>Игра в кальмара перезагрузка</h3>
+      <p>родолжает историю Сон Ки-хуна, который пытается остановить жестокие игры и найти организаторов.</p>
+    </div>
+    <div class="film-card">
+      <iframe src="https://www.youtube.com/embed/w7pYhpJaJW8" allowfullscreen></iframe>
+      <h3>Открытие</h3>
+      <p>На грани между наукой и чувствами.</p>
+    </div>
+    <div class="film-card">
+      <iframe src="https://www.youtube.com/watch?v=sCJdyfFChaM" allowfullscreen></iframe>
+      <h3>SOS Жардамга</h3>
+      <p>Визуально завораживающее приключение.</p>
+    </div>
+  </div>
+</div>
+
+<div id="comedy" class="genre-section">
+  <h2 class="genre-title">Комедия</h2>
+  <div class="film-grid">
+    <div class="film-card">
+      <iframe src="https://www.youtube.com/watch?v=2m3e1XXIK68&pp=0gcJCfwAo7VqN5tD" allowfullscreen></iframe>
+      <h3>Жезде</h3>
+      <p>После случайного наезда на девушку, двое друзей отвозят её в больницу, где один из них притворяется её парнем, чтобы избежать ответственности.</p>
+    </div>
+    <div class="film-card">
+      <iframe src="https://www.youtube.com/watch?v=3sl3qMaIxZo" allowfullscreen></iframe>
+      <h3>Аяш 4</h3>
+      <p>а этот раз Сапар и Катя планируют сумасшедшее путешествие в далёкую Индию. Они, естественно, приглашают полететь вместе с ними своих друзей.</p>
+    </div>
+    <div class="film-card">
+      <iframe src="https://www.youtube.com/watch?v=SRiTpMe9u2A" allowfullscreen></iframe>
+      <h3>Жигиттин гулу</h3>
+      <p>.</p>
+    </div>
+    <div class="film-card">
+      <iframe src="https://www.youtube.com/watch?v=r476ClS8piQ&pp=0gcJCfwAo7VqN5tD" allowfullscreen></iframe>
+      <h3>Жубайым</h3>
+      <p>.</p>
+    </div>
+    <div class="film-card">
+      <iframe src="https://www.youtube.com/watch?v=Ngat9-Lfd3U" allowfullscreen></iframe>
+      <h3>Карындаш</h3>
+      <p>Адеми не любит, когда родители говорят, что во времена СССР.</p>
+    </div>
+  </div>
+</div>
+
+<div id="fantasy" class="genre-section">
+  <h2 class="genre-title">Ужасы</h2>
+  <div class="film-grid">
+    <div class="film-card">
+      <iframe src="https://www.youtube.com/embed/V75dMMIW2B4" allowfullscreen></iframe>
+      <h3>Кара дуба</h3>
+      <p>рассказывает историю Айжан, девушки из богатой семьи, которая становится жертвой колдовства.</p>
+    </div>
+    <div class="film-card">
+      <iframe src="https://www.youtube.com/embed/1Q8fG0TtVAY" allowfullscreen></iframe>
+      <h3>Ифрит</h3>
+      <p>Мифология и супергероика в одном лице.</p>
+    </div>
+    <div class="film-card">
+      <iframe src="https://www.youtube.com/embed/woJzbG6KItE" allowfullscreen></iframe>
+      <h3>Кызыл койнокчон</h3>
+      <p> 2011 жылы жаш режиссёрлор Тилек Чериков, Айбек Дайырбеков, Данияр Абдыкеримов жана Санжар Абдыжапаровдордун эмгегинен жаралган, Кыргызстандын тарыхындагы эң алгачкы коркунучтуу жанрындагы тасма.</p>
+    </div>
+</div>
+
+  </div>  <script>
+    function showGenre(id) {
+      document.querySelectorAll('.genre-section').forEach(section => {
+        section.classList.remove('active');
+      });
+      document.getElementById(id).classList.add('active');
+    }
+
+    function filterFilms() {
+      const query = document.getElementById('searchInput').value.toLowerCase();
+      const activeSection = document.querySelector('.genre-section.active');
+      const films = activeSection.querySelectorAll('.film-card');
+
+      films.forEach(card => {
+        const title = card.querySelector('h3').textContent.toLowerCase();
+        card.style.display = title.includes(query) ? 'block' : 'none';
+      });
+    }
+    
+  </script>
+  <script>
+    const searchInput = document.querySelector('.header-search input');
+    const searchResults = document.getElementById('searchResults');
+  
+    searchInput.addEventListener('input', function () {
+      const searchValue = this.value.toLowerCase();
+      const films = document.querySelectorAll('.film-card');
+  
+      searchResults.innerHTML = '';
+  
+      if (searchValue.trim() === '') {
+        searchResults.style.display = 'none';
+        return;
+      }
+  
+      let found = 0;
+  
+      films.forEach(film => {
+        const title = film.querySelector('h3').textContent.toLowerCase();
+        const imgSrc = film.querySelector('img').getAttribute('src');
+        const link = film.querySelector('a').getAttribute('href');
+  
+        if (title.includes(searchValue)) {
+          found++;
+          const resultItem = document.createElement('a');
+          resultItem.className = 'search-result';
+          resultItem.href = link;
+          resultItem.innerHTML = `
+            <img src="${imgSrc}" alt="">
+            <span>${film.querySelector('h3').textContent}</span>
+          `;
+          searchResults.appendChild(resultItem);
+        }
+      });
+  
+      searchResults.style.display = found > 0 ? 'block' : 'none';
+    });
+  </script>
+  </body>
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Кинотеатр "Семетей" <br>Все права защищены.</p>
+    </div>
+  </footer>
+</html>

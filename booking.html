@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Бронирование</title>
+  <link rel="stylesheet" href="booking.css" />
+</head>
+<body>
+  <header>
+    <h1>Бронирование билета</h1>
+  </header>
+  <main class="booking-container">
+    <form id="booking-form">
+      <label for="film">Фильм:</label>
+      <input type="text" id="film" name="film" required />
+
+      <label for="hall">Зал:</label>
+      <select id="hall" name="hall" required>
+        <option value="Зал 1">Зал 1</option>
+        <option value="Зал 2">Зал 2</option>
+        <option value="Зал 3">Зал 3</option>
+        <option value="Зал 4">Зал 4</option>
+      </select>
+
+      <label for="row">Ряд:</label>
+      <select id="row" name="row" required></select>
+
+      <label for="seat">Место:</label>
+      <select id="seat" name="seat" required></select>
+
+      <label for="time">Время:</label>
+      <select id="time" name="time" required>
+        <option value="10:00">10:00</option>
+        <option value="11:00">11:00</option>
+        <option value="13:00">13:00</option>
+        <option value="14:30">14:30</option>
+        <option value="16:00">16:00</option>
+        <option value="18:00">18:00</option>
+        <option value="20:00">20:00</option>
+        <option value="22:00">22:00</option>
+      </select>
+      <div class="qr-section">
+        <h3>Оплата</h3>
+        <p>К оплате: <strong>200 сомов</strong></p>
+        <img src="img/qr-payment.png" alt="QR код для оплаты" class="qr-img">
+      </div>
+
+      <button type="submit">Забронировать</button>
+    </form>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
